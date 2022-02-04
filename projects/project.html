@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script> 
+    <script src="https://kit.fontawesome.com/ba67138bc2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="navbartask.css">
+    <title>My Projects</title>
+</head>
+<body>
+    <div w3-include-html="navbartask.html"></div>
+    <div id="projectDetail">
+    </div>
+    <div class="hidden" id="body" style="width: 100%; margin: 0px;">
+        <div  class="addProject" style="height: 750px;">
+            <h1 style="font-weight: bolder;">ADD MY PROJECT</h1>
+            <form id="formProject" class="formProject" onsubmit="postData(event)" action="" style="display: flex; flex-direction: column; width: 40%;">
+                <label for="projectName">Project Name</label>
+                <input type="text" name="projectName" id="projectName" placeholder="You Project Name" required>
+                <div class="projectDate" style="display: flex; justify-content: space-between;">
+                    <div style="display: flex; flex-direction: column; width: 48%;">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" name="startDate" id="startDate" placeholder="Your project start date" required>
+                    </div>
+                    <div style="display: flex; flex-direction: column; width: 48%;">
+                        <label for="endDate">End Date</label>
+                        <input type="date" name="endDate" id="endDate" placeholder="Your project end date" required>
+                    </div>
+                    
+                </div>
+                <label for="description">Description</label>
+               <textarea name="description" id="description" required></textarea>
+               <label for="techno">Technologies</label>
+               <div class="techno" style="display: flex; justify-content: space-between;">
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="display: flex; margin-bottom: 10px;">
+                            <input type="checkbox" id="techno1" name="reactjs" value="https://drive.google.com/uc?id=1cAqx3rgP8o9OqdHwphTvUcJ8IkJpg1iE">
+                            <label for="reactJs">React JS</label>        
+                        </div>
+                        <div style="display: flex;">
+                            <input type="checkbox" id="techno2" name="nodejs" value="https://drive.google.com/uc?id=1x99_Yst-dGPMrsFlZQ3iwTxPOkBnTTaH">
+                            <label for="nodejs">Node JS</label>        
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="display: flex; margin-bottom: 10px;">
+                            <input type="checkbox" id="techno3" name="nextjs" value="https://drive.google.com/uc?id=1gsllo4mXnhgwadGbmLBzLBcRKYoWILaP">
+                            <label for="nextjs">Next JS</label>        
+                        </div>
+                        <div style="display: flex;">
+                            <input type="checkbox" id="techno4" name="express" value="https://drive.google.com/uc?id=1ex2QS_t6s3AzacA5ll3DCmUU2Enx-KnP">
+                            <label for="express">Express</label>        
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="display: flex; margin-bottom: 10px;">
+                            <input type="checkbox" id="techno5" name="mongodb" value="https://drive.google.com/uc?id=15ByzD2zDx-5DjQhOUzKRWR9rxNXaPA5U">
+                            <label for="mongodb">Mongo DB</label>        
+                        </div>
+                        <div style="display: flex;">
+                            <input type="checkbox" id="techno6" name="postgres" value="https://drive.google.com/uc?id=15eaAtrchRLzqklAe5uzpy6ncH1_ySflg">
+                            <label for="postgres">Postgres SQL</label>        
+                        </div>
+                    </div>
+               </div>
+               <label for="uploadImage" >Upload Image</label>
+               <div class="uploadImage">
+                    <label for="chooseFile" >
+                        <p>Choose</p>
+                        <i class="fas fa-paperclip" style="margin-right: 10px; font-size: 20px; color: black;"></i>
+                    </label>
+                    
+                <input type="file" id="chooseFile" name="uploadImage" style="cursor: pointer;" hidden required>
+                </div>
+                <div style="display: flex; justify-content: flex-end; ">
+                    <button style="margin-top: 20px;font-family: Open Sans, sans-serif; font-size: 20px; font-size: medium; width: 100px; margin-bottom: 20px; background-color: rgba(17,23,39,255); color: white; border-radius: 20px; border: 1px solid rgba(17,23,39,255) ;">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="myProjects" style="width: 100%; height: 750px; background-color: rgba(248,248,248,255);">
+            <div class="section" style="text-align: center; padding-top: 3%; width: 100%;">
+                <h1>MY PROJECTS</h1>
+                <div class="projects" id="projects">
+                    
+                    <div class="projectList" id="projectList">
+                        <a href=project-detail.html?projectList target="_blank" style="cursor: pointer; text-decoration: none;">
+                            <img src=" https://drive.google.com/uc?id=1KBbIoBkdbFOz25avQVvpsF224hUOocs3" width="100%" height="40%" alt="">
+                        </a>
+                        <div style="height: 30%; margin: auto;">
+                            <p style="font-weight: bold; font-size: large; margin: 0px;">Personal Web Page</p>
+                            <p style="color: #564f4f ; margin: 0px;">Durasi : 1 bulan</p>
+                            <p style="margin-top: 20px;">Personal website to introducing my self and my background. This web user can contact me to get touch with me using email in the contact form. And this website have post my project i have been create</p>
+                        </div>
+                        <div class="technoList" id="technoList" style="display: flex; height: 20%; font-weight: bold;">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>Javascript</p>
+                        </div>
+
+                        <div>
+                            
+                        </div>
+                        <div class="buttonList">
+                                <button>
+                                    edit
+                                </button>
+                                <button>
+                                    delete
+                                </button>
+                        </div>
+                    </div>
+                </a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="project.js"></script>
+<script>
+    w3IncludeHTML();
+    </script>
+</html>

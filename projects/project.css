@@ -1,0 +1,111 @@
+body{
+    font-family: Open Sans, sans-serif;
+    font-size: medium;
+    margin: 0px;
+    
+}
+
+.addProject{
+    display: flex; flex-direction: column; justify-content: center; align-items: center; 
+    margin-top: 1%; padding-top: 2%; background-color: rgba(216, 216, 216, 0.664);
+}
+
+.formProject > input{
+    margin-bottom: 10px;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000040;
+    background-color: white;
+    box-shadow: 0px 10px 10px -10px #00000040;
+    border: none;
+    padding: 10px;
+    font-family: Open Sans, sans-serif; font-size: 20px; 
+}
+.formProject > label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+
+.formProject > .projectDate > div> label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+.formProject >.projectDate > div > input{
+    margin-bottom: 10px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000040;
+    background-color: white;
+    box-shadow: 0px 10px 10px -10px #00000040;
+    border: none;
+    font-family: Open Sans, sans-serif; font-size: 20px; 
+}
+
+.formProject > textarea {
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000040;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 10px -10px #00000040;
+    margin-bottom: 10px;
+    border:  none;
+    font-family: Open Sans, sans-serif; font-size: 20px; 
+    resize: none;
+}
+
+.techno > div {
+    margin-bottom: 10px;
+    color: #564f4f;
+    font-weight: bold;
+}
+
+.uploadImage{
+    width: 100%; border: none; background-color: white; height: 40px; border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000040;
+    box-shadow: 0px 10px 10px -10px #00000040;
+}
+
+.uploadImage > label {
+    cursor: pointer; display: flex; align-items: center; border-radius: 5px;
+     box-shadow: 0px 0px 10px #00000040; justify-content: space-between; height: 100%;
+     box-shadow: 0px 10px 10px -10px #00000040;
+}
+
+.projects{
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-gap: 20px; width: 100%;
+}
+.projectList{
+    width: 80%; border: 1px solid white; margin: auto; padding: 10px; text-align: left; margin-top: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #00000040;
+    border-radius: 10px;
+    height: 530px;
+}
+.uploadImage > label > p {
+    margin: 0px; padding-left: 10px; border: 1px solid #ada8a85e; background-color: #e4e4e4; width: 15%; border-radius: 5px; height: 100%; display: flex; align-items: center; 
+    color: #564f4f;
+}
+
+.technoList > p {
+    padding: 10px;
+}
+.buttonList{
+    display: flex;
+    justify-content: space-between;
+}
+.buttonList > button {
+    margin: 10px;
+    border: 1px solid rgba(17,23,39,255);
+    background-color: rgba(17,23,39,255);
+    width: 40%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    
+}

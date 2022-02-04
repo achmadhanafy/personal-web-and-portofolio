@@ -1,0 +1,96 @@
+body{
+    background-color: rgba(216, 216, 216, 0.664);
+    padding-bottom: 20px;
+}
+.section{
+    display: flex; flex-direction: column; justify-content: center; align-items: center;font-family: Open Sans, sans-serif; font-size: medium; 
+    margin-top: 5%;
+}
+
+.form{
+    display: flex; flex-direction: column; width: 30%;
+}
+.form > input {
+    height: 20px;
+    border-radius: 5px;
+    border: 10px solid white;
+    box-shadow: 0px 10px 10px -10px #00000040;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Open Sans, sans-serif; font-size: 20px; 
+    
+}
+.form > select {
+    height: 45px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000040;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 10px -10px #00000040;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    font-family: Open Sans, sans-serif; font-size: medium; 
+
+   
+}
+
+
+.form > textarea {
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000040;
+    margin-top: 1%px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 10px -10px #00000040;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    font-family: Open Sans, sans-serif; font-size: 20px; 
+    resize: none;
+    
+}
+
+.button1 > button {
+    font-family: Open Sans, sans-serif; font-size: 20px; 
+    width: 120px;
+     height: 40px;
+     margin-top: 10px; background-color: black;
+     color: white;
+     border: 1px solid black;
+     border-radius: 20px;
+     font-weight: bold;
+     font-size: medium;
+}
+.button1 > button:hover{
+    background-color: rgb(143, 145, 143) ;
+    cursor: pointer;
+    border: 1px solid rgb(143, 145, 143) ;
+}
+
+.button1{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+@media (max-width: 61.25em) {
+    .form{
+        width: 50%;
+    }
+    .section{
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 28.75em){
+    .form{
+        width: 80%;
+    }
+    .section{
+        margin-top: 50%;
+    }
+}
+    

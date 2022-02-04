@@ -1,0 +1,86 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+  }
+  .nav {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color:rgb(241, 241, 247);
+      box-shadow: 0px 0px 20px #00000040;
+      font-family: Open Sans, sans-serif;
+      width: 100%;
+      align-items: center;
+    }
+    .nav_item_start{
+      display: flex;
+      justify-content:flex-start;
+      flex: 50%;
+      align-items: center;
+    }
+    .nav_item_end{
+      display: flex;
+      justify-content: flex-end;
+      flex: 50%;
+      padding-top: 10px;
+      padding-right: 20px;
+    }
+    .nav-list {
+      display: flex;
+      margin-right: 2rem;
+      list-style-type: none;
+      
+    }
+    li > a{
+      border-radius: 10px;
+    }
+    li a:hover:not(.active) {
+      background-color: rgb(203, 206, 203);
+    }
+    .nav_item_end > form > button {
+        margin-right: 50px; cursor: pointer; background: #111727; border-radius: 5px; font-weight: bold; font-size: medium; color: white; width: 150px; height: 40px; border-radius: 10px; border: 1px solid white;
+    }
+    .nav-list a {
+      display: block;
+      font-size: medium;
+      font-weight: bold;
+      padding: 10px 30px 10px 10px;
+    }
+    
+    .nav_item_end > a{
+      display: none;
+      text-decoration: none;
+      color: black;
+      font-size: 30px;
+    }
+    
+    .nav_item_end > a:hover{
+      color: rgb(143, 145, 143) ;
+    }
+    .nav_item_end > form > button:hover {
+      background-color: rgb(143, 145, 143) ;
+    }
+    @media (max-width: 28.75em){
+      .nav-list{
+        flex-direction: row;
+      }
+       .nav_item_end > form > button {
+           margin-right: 0px;
+           display: none;
+       }
+       .nav_item_end > a {
+        display:initial;
+        
+      }
+      
+       .nav-list >a> img {
+           width: 50px;
+       }
+       .nav_item_start{
+           flex: 70%;
+       }
+    }

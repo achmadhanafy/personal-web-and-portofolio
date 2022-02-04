@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script> 
+    <script src="https://kit.fontawesome.com/ba67138bc2.js" crossorigin="anonymous"></script>
+    <script src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="navbartask.css">
+    <link rel="stylesheet" href="task2.css">
+    
+    <title>Document</title>
+</head>
+<body style="">
+    <div w3-include-html="navbartask.html"></div>
+    <div class="section">
+        <h2 style="font-weight: bolder; margin-bottom: 1%">GET IN TOUCH</h2>
+            <form class="form" action="/task/portofolio/index.html" target="_blank">
+                <label for="name">Name</label>
+                <input id="name"type="text" placeholder="Your name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email" required>
+                <label for="phone">Phone Number</label>
+                <input name="numonly" type="tel" id="phone" placeholder="Phone number" title="Phone number must input a number" required>
+                <label for="subject">Subject</label>
+                    <select class="classic" name="subject" id="subject" required>
+                        <option value="" selected disabled hidden>Choose here</option>
+                        <option value="I'm Looking for candidate">I'm looking for candidates</option>
+                        <option value="Interview">Interview</option>
+                        <option value="I'm looking for commercial project">I'm looking for commercial project</option>
+                        <option value="Maintance our web application">Maintance our web application</option>
+
+                    </select>
+                
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Write your message" required></textarea>
+                <div class="button1">
+                    <button onclick="getMessage();" type="submit"> Submit</button>
+                </div>
+                
+            </form>
+    </div>
+    <script>
+        w3IncludeHTML();
+        </script>
+    <script src="form.js"></script>
+</body>
+</html>

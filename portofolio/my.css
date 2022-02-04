@@ -1,0 +1,124 @@
+
+.section{
+    flex-direction: row; display: flex; width: 80%;
+}
+body{
+    margin: 0px;
+    font-family: Open Sans, sans-serif;
+    line-height: 1.6;
+}
+.card{
+    width: 30%;
+    border: 1px solid white;
+    margin-top: 3%;
+    margin-bottom: 150px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(248, 245, 245);
+     box-shadow: 0px 0px 20px #00000040;
+     font-family: Open Sans, sans-serif;
+     margin-left: 50px;
+}
+.describe{
+    display: flex; flex-direction: column; text-align:justify ; margin:150px 20px 20px 20px;
+     width: 50%;  
+}
+.icon{
+    font-size: 40px;
+    margin-top: 50px;
+}
+.exp{
+    display: flex; flex-direction: row; margin-top: 30px;
+}
+.exp-detail{
+    display: flex; flex-direction: column; width:25%; font-size: 15px; margin-right: 10px;
+}
+.section_edu{
+    background-color:#37af65; width: 100%; box-shadow: 0px 0px 20px 5px #13a026d2; padding-bottom: 20px; padding-top: 20px;
+    flex: display; flex-direction: row;
+}
+.edu_skill{
+    display: flex; flex-direction: row; width: 100%;
+}
+.edu{
+    width: 50%;
+}
+.edu > div{
+    text-align: left; border: 1px solid wheat; width: 80%; height: 700px; box-shadow: 0px 0px 20px #00000040; background-color: white;
+    border-radius: 20px; padding: 15px;
+}
+.skill{
+    width: 50%;
+}
+.skill > div{
+    text-align: left; border: 1px solid wheat; width: 80%; height: 700px; box-shadow: 0px 0px 20px #00000040; background-color: white;
+    border-radius: 20px; padding: 15px;
+}
+
+@media (max-width: 61.25em) {
+    .card{
+        width: 70%;
+        margin: 100px 10px 10px 10px;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .describe{
+        margin-top: 10px;
+        width: 80%;
+    }
+    .edu_skill{
+        flex-direction: column;
+    
+    }
+    .edu{
+        width: 100%;
+    }
+    .edu > div{
+        width: 80%;
+    }
+    .skill{
+        width: 100%;
+    }
+    .skill > div {
+        width: 80%;
+    }
+
+  }
+@media (max-width: 28.75em){
+    .card{
+        width: 80%;
+        margin: 150px 10px 10px 10px;
+    }
+    .describe{
+
+        margin-top: 10px;
+        width: 80%;
+    }
+    .exp{
+        flex-direction: column;
+        width: 100%;
+    }
+    .exp-detail{
+        width: 100%;
+    }
+    .edu_skill{
+        flex-direction: column;
+    
+    }
+    .edu{
+        width: 100%;
+    }
+    .edu > div{
+        width: 80%;
+        height: 1000px;
+    }
+    .skill{
+        width: 100%;
+    }
+    .skill > div {
+        width: 80%;
+        height: 1000px;
+    }
+    
+}
