@@ -91,21 +91,24 @@ body{
     color: #564f4f;
 }
 
-.technoList > p {
-    padding: 10px;
+.technoList > p {   
+    display: flex;
+    align-items: center;
+    padding: 5px;
 }
 .buttonList{
     display: flex;
     justify-content: space-between;
 }
 .buttonList > button {
-    margin: 10px;
+    margin: 5px;
     border: 1px solid rgba(17,23,39,255);
     background-color: rgba(17,23,39,255);
-    width: 40%;
+    width: 100%;
     text-align: center;
     color: white;
     font-weight: bold;
     border-radius: 8px;
+    font-size: large;
     
 }
